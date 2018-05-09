@@ -11,6 +11,7 @@ public class SonarTest {
 	public void testar_alvarino() {
 		Alvarino alva = new Alvarino();
 		alva.teste();
+		alva.teste();
 	}
 
 }
