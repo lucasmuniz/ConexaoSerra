@@ -13,7 +13,7 @@ public class Cliente {
         this.comprasEfetuadas = new ArrayList<Compra>();
     }
 
-    public  efetuarCompra(Compra compra, double dinheiro) throws FaltouDinheiroException {
+    public double efetuarCompra(Compra compra, double dinheiro) throws FaltouDinheiroException {
         if (compra.possoPagar(dinheiro)) {
             comprasEfetuadas.add(compra);
             return compra.calcularTroco(dinheiro);
