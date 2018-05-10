@@ -62,7 +62,7 @@ public class ClienteIntegrationTest {
         Assert.assertTrue(compraAprovada);
     }
 
-    @Test
+   /* @Test
     public void NaoDeveriaEfetuarCompraComCartaoSemLimite() {
         //scenery
         List<Produto> produtos = new ArrayList<Produto>();
@@ -74,5 +74,5 @@ public class ClienteIntegrationTest {
 
         //assert
         Assert.assertFalse(compraAprovada);
-    }
+    }*/
 }
