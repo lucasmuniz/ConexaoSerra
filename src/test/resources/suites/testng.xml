@@ -5,6 +5,10 @@
 	<test name="Teste">
 		<classes>
 			<class
+					name="conexao.serra.mockito.ClienteMockitoTest" />
+			<class
+					name="conexao.serra.integration.ClienteIntegrationTest" />
+			<class
 				name="conexao.serra.testng.CalculaFreteTest" />
 		</classes>
 	</test>
