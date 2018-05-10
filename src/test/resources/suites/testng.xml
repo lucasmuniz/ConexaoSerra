@@ -5,7 +5,7 @@
 	<test name="Teste">
 		<classes>
 			<class
-				name="conexao.serra.SonarTest" />
+				name="conexao.serra.testng.CalculaFreteTest" />
 		</classes>
 	</test>
 
