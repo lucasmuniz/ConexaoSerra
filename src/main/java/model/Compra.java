@@ -13,7 +13,7 @@ public class Compra {
     }
 
     public Pagamento getPagamento() {
-        return ;
+        return pagamento ;
     }
 
 }
