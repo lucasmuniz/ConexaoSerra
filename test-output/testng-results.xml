@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35" started-at="2018-05-09T20:46:09Z" finished-at="2018-05-09T20:46:09Z">
+  <suite name="Default suite" duration-ms="30" started-at="2018-05-10T01:02:08Z" finished-at="2018-05-10T01:02:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35" started-at="2018-05-09T20:46:09Z" finished-at="2018-05-09T20:46:09Z">
-      <class name="conexao.serra.SonarTest">
-        <test-method status="FAIL" signature="testar_alvarino()[pri:0, instance:conexao.serra.SonarTest@724af044]" name="testar_alvarino" duration-ms="0" started-at="2018-05-09T20:46:09Z" finished-at="2018-05-09T20:46:09Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Default test" duration-ms="30" started-at="2018-05-10T01:02:08Z" finished-at="2018-05-10T01:02:08Z">
+      <class name="conexao.serra.testng.CalculaFreteTest">
+        <test-method status="PASS" signature="calcular_valor_da_taxa_do_frete_para_cep_de_SC()[pri:0, instance:conexao.serra.testng.CalculaFreteTest@6767c1fc]" name="calcular_valor_da_taxa_do_frete_para_cep_de_SC" duration-ms="9" started-at="2018-05-10T01:02:08Z" finished-at="2018-05-10T01:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcular_valor_da_taxa_do_frete_para_cep_de_SC -->
+        <test-method status="PASS" signature="calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura()[pri:0, instance:conexao.serra.testng.CalculaFreteTest@6767c1fc]" name="calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura" duration-ms="1" started-at="2018-05-10T01:02:08Z" finished-at="2018-05-10T01:02:08Z">
+          <exception class="exceptions.TaxaUFNaoEncontradaException">
             <message>
-              <![CDATA[expected [494928] but found [1]]]>
+              <![CDATA[Taxa de frete não encontrada para o CEP informado.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [494928] but found [1]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at conexao.serra.SonarTest.testar_alvarino(SonarTest.java:14)
+              <![CDATA[exceptions.TaxaUFNaoEncontradaException: Taxa de frete não encontrada para o CEP informado.
+at model.CalculaFrete.taxaDeFretePorEstado(CalculaFrete.java:15)
+at conexao.serra.testng.CalculaFreteTest.calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura(CalculaFreteTest.java:26)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,11 +47,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- exceptions.TaxaUFNaoEncontradaException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testar_alvarino -->
-      </class> <!-- conexao.serra.SonarTest -->
+        </test-method> <!-- calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura -->
+      </class> <!-- conexao.serra.testng.CalculaFreteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
