@@ -5,7 +5,8 @@
     <classes>
       <class name="conexao.serra.testng.CalculaFreteTest">
         <methods>
-          <include name="calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura"/>
+          <include name="calcular_valor_da_taxa_do_frete_para_cep_de_SC"/>
+          <include name="executarAntesDometodo"/>
         </methods>
       </class> <!-- conexao.serra.testng.CalculaFreteTest -->
     </classes>
