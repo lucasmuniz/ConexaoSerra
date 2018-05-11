@@ -26,7 +26,7 @@ public class ClienteMockitoTest {
 
     /**Efetuar compra com sucesso**/
     @Test
-    public void DeveriaEfetuarCompraComDinheiroComSucesso() throws FaltouDinheiroException {
+    public void Deveria_Efetuar_Compra_Com_Dinheiro_Com_Sucesso() throws FaltouDinheiroException {
         //scenery
         Mockito.when(cliente.efetuarCompraComDinheiro(Mockito.any(Compra.class), Mockito.anyDouble())).thenCallRealMethod();
         List<Produto> produtos = new ArrayList<Produto>();

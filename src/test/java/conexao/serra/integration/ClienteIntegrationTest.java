@@ -24,7 +24,7 @@ public class ClienteIntegrationTest {
     }
 
     @Test
-    public void DeveriaEfetuarCompraComDinheiroComSucesso() throws FaltouDinheiroException {
+    public void Deveria_Efetuar_Compra_Com_Dinheiro_Com_Sucesso() throws FaltouDinheiroException {
         //scenery
         List<Produto> produtos = new ArrayList<Produto>();
         produtos.add(new Produto("Produto 1", 4, 1));
@@ -38,7 +38,7 @@ public class ClienteIntegrationTest {
     }
 
     @Test(expectedExceptions = FaltouDinheiroException.class)
-    public void NaoDeveriaEfetuarCompraSemDinheiroSuficiente() throws FaltouDinheiroException {
+    public void Nao_Deveria_Efetuar_Compra_Sem_Dinheiro_Suficiente() throws FaltouDinheiroException {
         //scenery
         List<Produto> produtos = new ArrayList<Produto>();
         produtos.add(new Produto("Produto 1", 4, 1));
@@ -49,7 +49,7 @@ public class ClienteIntegrationTest {
     }
 
     @Test
-    public void DeveriaEfetuarCompraComCartaoComSucesso() {
+    public void Deveria_Efetuar_Compra_Com_Cartao_Com_Sucesso() {
         //scenery
         List<Produto> produtos = new ArrayList<Produto>();
         produtos.add(new Produto("Produto 1", 4, 1));
