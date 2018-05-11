@@ -20,7 +20,7 @@ public class CalculaFreteTest {
 		}
 	}
 	
-	
+
 	
 	
 	
@@ -44,6 +44,7 @@ public class CalculaFreteTest {
 	public void calcular_valor_da_taxa_do_frete_para_cep_menor_fora_da_cobertura() throws TaxaUFNaoEncontradaException {
 		CalculaFrete calculaFrete = new CalculaFrete();
 		calculaFrete.taxaDeFretePorEstado(70000000);
-	}*/
+	}
+	*/
 
 }
