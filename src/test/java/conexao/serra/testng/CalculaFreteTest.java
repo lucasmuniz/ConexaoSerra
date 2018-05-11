@@ -19,11 +19,31 @@ public class CalculaFreteTest {
 			Assert.fail(e.getMessage());
 		}
 	}
-
-	@Test(expectedExceptions = TaxaUFNaoEncontradaException.class)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*@Test(expectedExceptions = TaxaUFNaoEncontradaException.class)
 	public void calcular_valor_da_taxa_do_frete_para_cep_fora_da_cobertura() throws TaxaUFNaoEncontradaException {
 		CalculaFrete calculaFrete = new CalculaFrete();
 		calculaFrete.taxaDeFretePorEstado(999999991);
 	}
+	
+	@Test(expectedExceptions = TaxaUFNaoEncontradaException.class)
+	public void calcular_valor_da_taxa_do_frete_para_cep_menor_fora_da_cobertura() throws TaxaUFNaoEncontradaException {
+		CalculaFrete calculaFrete = new CalculaFrete();
+		calculaFrete.taxaDeFretePorEstado(70000000);
+	}*/
 
 }
