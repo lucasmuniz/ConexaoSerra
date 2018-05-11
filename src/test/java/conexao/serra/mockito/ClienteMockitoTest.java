@@ -24,6 +24,7 @@ public class ClienteMockitoTest {
         MockitoAnnotations.initMocks(this);
     }
 
+    /**Efetuar compra com sucesso**/
     @Test
     public void DeveriaEfetuarCompraComDinheiroComSucesso() throws FaltouDinheiroException {
         //scenery
@@ -39,34 +40,43 @@ public class ClienteMockitoTest {
         Assert.assertTrue(troco == 1);
     }
 
-    @Test(expectedExceptions = FaltouDinheiroException.class)
-    public void NaoDeveriaEfetuarCompraSemDinheiroSuficiente() throws FaltouDinheiroException {
+    /**Realizar teste com mock Exception**/
+
+
+    /**Realizar teste com mock Sem Limite**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /*@Test (expectedExceptions = FaltouDinheiroException.class)
+    public void DeveriaRetornarException() throws FaltouDinheiroException {
         //scenery
-        Mockito.when(cliente.efetuarCompraComDinheiro(Mockito.any(Compra.class), Mockito.anyDouble())).thenCallRealMethod();
+        Mockito.when(cliente.efetuarCompraComDinheiro(Mockito.any(Compra.class), Mockito.anyDouble())).thenThrow(new FaltouDinheiroException());
         List<Produto> produtos = new ArrayList<Produto>();
         produtos.add(new Produto("Produto 1", 4, 1));
         Compra compra = new Compra(produtos);
 
         //action
-        cliente.efetuarCompraComDinheiro(compra, 3);
-    }
+        cliente.efetuarCompraComDinheiro(compra, 5);
+    }*/
 
-    @Test
-    public void DeveriaEfetuarCompraComCartaoComSucesso() {
-        //scenery
-        Mockito.when(cliente.efetuarCompraComCartao(Mockito.any(Compra.class))).thenCallRealMethod();
-        List<Produto> produtos = new ArrayList<Produto>();
-        produtos.add(new Produto("Produto 1", 4, 1));
-        Compra compra = new Compra(produtos);
 
-        //action
-        boolean compraAprovada = cliente.efetuarCompraComCartao(compra);
-
-        //assert
-        Assert.assertTrue(compraAprovada);
-    }
-
-    @Test
+   /* @Test
     public void NaoDeveriaEfetuarCompraComCartaoSemLimite() {
         //scenery
         Mockito.when(cliente.efetuarCompraComCartao(Mockito.any(Compra.class))).thenReturn(false);
@@ -79,5 +89,5 @@ public class ClienteMockitoTest {
 
         //assert
         Assert.assertFalse(compraAprovada);
-    }
+    }*/
 }

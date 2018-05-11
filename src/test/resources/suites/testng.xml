@@ -10,6 +10,8 @@
 					name="conexao.serra.integration.ClienteIntegrationTest" />
 			<class
 				name="conexao.serra.testng.CalculaFreteTest" />
+			<class
+					name="conexao.serra.powermock.CloseAppTest" />
 		</classes>
 	</test>
 

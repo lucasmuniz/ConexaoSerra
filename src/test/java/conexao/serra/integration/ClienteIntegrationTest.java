@@ -62,17 +62,5 @@ public class ClienteIntegrationTest {
         Assert.assertTrue(compraAprovada);
     }
 
-   /* @Test
-    public void NaoDeveriaEfetuarCompraComCartaoSemLimite() {
-        //scenery
-        List<Produto> produtos = new ArrayList<Produto>();
-        produtos.add(new Produto("Produto 1", 4, 1));
-        Compra compra = new Compra(produtos);
-
-        //action
-        boolean compraAprovada = cliente.efetuarCompraComCartao(compra);
-
-        //assert
-        Assert.assertFalse(compraAprovada);
-    }*/
+    /**Realizar 'teste' com cartão sem limite**/
 }
